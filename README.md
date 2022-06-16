@@ -80,3 +80,7 @@ Pathology: 클래스
 [2] Prasanth Ganesan, Sivaramakrishn an Rajaraman, L. Rodney Long, Behnaz Ghoraani, Sameer K. Antani 2019. Assessment of Data Augmentation Strategies Toward Performance Improvement of Abnormality Classification in Chest Radiographs. EMBC 2019.
 
 [3] Tianyu Han, Sven Nebelung, Christoph Haarburger, Nicolas Horst, Sebastian Reinartz, Dorit Merhof, Fabian Kiessling, Volkmar Schulz, and DanielTruhn. 2019. Breaking Medical Data Sharing Boundaries by EmployingArtificial Radiographs. bioRxiv (2019).
+
+[4] https://github.com/ssundaram21/6.819FinalProjectRAMP
+
+[5] https://github.com/peterhan91/Thorax_GAN
