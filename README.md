@@ -9,7 +9,9 @@
 ### 나. 과제 주요 내용
 
   본 과제는 클래스 불균형이 존재하는 흉부 X-ray 이미지 데이터셋으로 이미지상의 병리학적 증상(pathology) 유무 여부를 분류하는 모델의 분류 성능을 data augmentation 기법을 통해 개선하는 것을 목표로 한다. 
+ 
  데이터셋으로 stanford 병원에서 민간에 연구용으로 공개한 CheXpert 데이터셋을 사용하였다. 해당 데이터셋은 224,316장의 이미지로 구성되며, 각 이미지에는 14개의 클래스(병리학적 증상) 중 각 클래스의 양/음성 여부를 나타내는 정보가 레이블링이 되어 있다. 이 데이터셋을 가지고 사전 학습된 DenseNet-121 모델을 전이학습을 한다. 학습된 모델의 분류 성능을 baseline으로 두어, data augmentation을 한 후의 분류 성능과 비교하여 개선도를 체크하는 것이 본 과제의 최종 결과이다. 이때 분류 성능 지표로 해당 데이터셋의 클래스 불균형을 초래하는 세 가지 클래스에 대한 ROC(Receiver Operating Characteristic)의 AUC(Area Under the Curve)를 사용한다. 해당 세 가지 클래스는 아래 [그림-1]에 나와있는 바와 같이 Positive 비율이 5% 미만인 클래스 Lung Lesion, Pleural Other, Fracture이다. 
+ 
  Data Augmentation 기법으로 Generative Adversarial Networks를 사용한다. GAN 모델로는 고해상도의 이미지를 안정적인 학습을 통해 생성해내는 것으로 알려진 Progressive Growing Generative Adversarial Networks를 채택하였다. [1]에서는 본 프로젝트와 동일한 GAN 모델로 분류 모델 성능을 개선하는데 성공하였고, 본 프로젝트에서는 [1]에서 개선된 양보다 더 개선시키는 것을 목표로 한다. 그 방법으로 GAN 학습에 사용되는 데이터셋을 Filtering에 기반한 Data Augmentation(Gaussian Blur, Unsharp Masking, Minimum Filtering)[2]으로 데이터셋을 증강하여 GAN을 학습한다. 이 경우 GAN의 학습이 더 잘 될 것으로 기대되어, 이는 분류 모델 학습 시 좋은 질의 fake image의 유입으로 인한 성능 개선으로 귀결이 될 것으로 기대하고 진행하였다. 
 
 
