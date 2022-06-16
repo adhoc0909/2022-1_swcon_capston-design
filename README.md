@@ -76,5 +76,7 @@ Pathology: 클래스
 ---
 [참고자료]
 [1] Shobhita Sundaram, Neha Hulkund. 2021. GAN-based Data Augmentation for Chest X-ray Classification. KDD 2021
+
 [2] Prasanth Ganesan, Sivaramakrishn an Rajaraman, L. Rodney Long, Behnaz Ghoraani, Sameer K. Antani 2019. Assessment of Data Augmentation Strategies Toward Performance Improvement of Abnormality Classification in Chest Radiographs. EMBC 2019.
+
 [3] Tianyu Han, Sven Nebelung, Christoph Haarburger, Nicolas Horst, Sebastian Reinartz, Dorit Merhof, Fabian Kiessling, Volkmar Schulz, and DanielTruhn. 2019. Breaking Medical Data Sharing Boundaries by EmployingArtificial Radiographs. bioRxiv (2019).
