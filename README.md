@@ -1,5 +1,6 @@
 # 2022년 1학기 소프트웨어융합 캡스톤디자인
 ## GAN 기반 Data Augmentation을 통한 흉부 X-ray 사진 classification 성능 개선
+### 경희대학교 소프트웨어융합학과 이호욱
 ---
 ## 1. 과제 개요
 ---
